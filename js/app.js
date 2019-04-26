@@ -76,7 +76,8 @@ function branch(len) {
         c.save();
 
         //rotates right
-        c.rotate(angle + ((Math.random()*Math.PI/8) - Math.PI/16));
+        c.rotate(angle);
+        // c.rotate(angle + ((Math.random()*Math.PI/8) - Math.PI/16));
 
         //recursively calls back
         branch(2*len/3);
@@ -86,7 +87,8 @@ function branch(len) {
 
         //does the same for the left side
         c.save();
-        c.rotate(-angle + ((Math.random()*Math.PI/8) - Math.PI/16));
+        c.rotate(-angle);
+        // c.rotate(-angle + ((Math.random()*Math.PI/8) - Math.PI/16));
         branch(2*len/3);
         c.restore();
 
