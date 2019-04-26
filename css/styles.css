@@ -1,0 +1,14 @@
+* {
+    overflow: hidden;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     text-align: center;
+     flex-direction: column;
+     background-color: #333;
+     align-items: center;
+     font-family: 'lato', sans-serif;
+}
