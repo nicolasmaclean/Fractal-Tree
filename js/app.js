@@ -16,7 +16,7 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 
 //constants for tree;
-const length = 200;
+var length = canvas.height/3;
 var angle = Math.PI/4;
 const minSize = 2;
 
@@ -34,17 +34,19 @@ function init() {
     slider.max = Math.PI;
     slider.min = -Math.PI;
     slider.step = ".05";
-
+    
     //sets the canvas dimensions
     width = window.innerWidth;
     height = window.innerHeight - sliderDiv.clientHeight;
     canvas.width = width;
     canvas.height = height;
+    
+    length = canvas.height/3;
 
     //draws background color
     c.fillStyle = "#333";
     c.fillRect(0, 0, width, height);
-
+    
     //moves the origin of the canvas
     c.translate(width/2, height);
 
