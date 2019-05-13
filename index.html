@@ -10,8 +10,30 @@
 </head>
 <body>
     <div id="sliderDiv">
-        <input type="range" id="slider">
-        <p1 id="sliderAmt">0</p1>
+        
+        <div>
+            <label for="length"> Min Branch Length </label>
+            <input type="text" id="length" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        </div>
+        <div>
+            <p1 id="sliderAmt">Angle: </p1>
+            <input type="range" id="slider">
+        </div>
+        <div class="container">
+            <div>
+                <label for="2"> Split 2 </label>
+                <input type="radio" name="type" id="2" class="check" checked>
+            </div>
+            <div id="div3">
+                <label for="3"> Split 3 </label>
+                <input type="radio" name="type" id="3" class="check">
+            </div>
+            <div>
+                    <label for="4"> Split 4 </label>
+                    <input type="radio" name="type" id="4" class="check">
+            </div>
+        </div>
+
     </div>
     <canvas id="canvas"></canvas>
     <script src="js/app.js"></script>
